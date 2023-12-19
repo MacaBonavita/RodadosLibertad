@@ -39,6 +39,10 @@ header {
   margin: auto;
 }
 
+.imgluis:hover {
+  transform: rotate(360deg);
+}
+
 .imgluisp {
   text-align: center;
 }
@@ -69,6 +73,21 @@ h2 {
   margin: 20px 0px;
 }
 
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /* Footer */
 footer {
   margin: 20px;
